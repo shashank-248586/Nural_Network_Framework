@@ -1,0 +1,134 @@
+1 What is TensorFlow 2.0, and how is it different from TensorFlow 1.x2 ?
+ans 
+TensorFlow is a framework that gives functionality to perform various deep learning approches.
+    i-That can be image classification through cnn,rcnn etc
+    ii- That can be NLP task's using RNN Lstm etc
+
+in TensorFlow 2.0 there is no redundant api along with existing apis are more consistant rather than 1.x2 
+version
+
+2 How do you install TensorFlow 2.02?
+ans 
+for installing TensorFlow latest version 
+go to the comand promt
+type 
+-> pip install TensorFlow
+
+3 What is the primary function of the tf.function in TensorFlow 2.02 ?
+ans 
+tf.function is a decorater provided by TensorFlow
+adding two list's , tupple , constant with simple function can difficult according to computation
+but adding decorater to that function the parameter can convert into tensor and output also convert to 
+a tensor which is efficent to perform .
+
+4 What is the purpose of the Model class in TensorFlow 2.0 ?
+ans 
+model class in TensorFlow gives structure of the model(basicly input to model and output to model)
+whether it sequential or input-output combination or pre-existing model.
+
+5 How do you create a neural network using TensorFlow 2.0?
+ans
+first selct the component's that require for create the model.
+then make a object of model.Sequential()
+inside the parenthesis you can write the comma separated component which are from (keras.layers) along 
+with parameter inside squre braket.
+
+6 What is the importance of Tensor Space in TensorFlow ?
+ans 
+Tensor's are multi-dimentional uniform  immutable vector's .
+By converting our data to a tensor it can efficently to manupulating our  data and it is easyer to 
+apply machine learning algorithm on it to find complex pattern behind it.
+
+7 How can TensorBoard be integrated with TensorFlow 2.0 ?
+ans
+When a model is training on a custom dataset then it is important to measure the accuracy , loss for each 
+epoch (for better training ) visualize the model training.
+so TensorBoard provides some special functionality that measuer's above thing
+
+
+8 What is the purpose of TensorFlow Playground2 ?
+ans
+TensorFlow Playground2 is a website where you can visualize your model what ever you want to 
+perform (that can be classification , regression ).
+simple you add these component what you use to be in your model (layers and nurons ).
+see the flow diagram it will show you the actual flow of training.
+
+
+9 What is Netron, and how is it useful for deep learning models ?
+ans 
+Netron is a nural network model visualization tool developed based on the Electron platform.
+It support's the visualization of many mainstream AI framework models.
+
+10  What is the difference between TensorFlow and PyTorch  ? 
+ans
+PyTorch offer's dynamic computational graphs , allowing on the flay modification during 
+training .This makes it ideal for project's  requring adaptable architecture.
+while TensorFlow uesd as industrial purpose. It offer's static computatinal graphs.
+
+
+11 How do you install PyTorch ?
+ans 
+pip install torch
+
+12 What is the basic structure of a PyTorch neural network ?
+ans
+nural network consis of layers and modules that perform operation on data.
+The torch.nn namespace povides all the building block's that you need to buikd your own nural network.
+Every comonet of pytorch is a subclass of nn.Module.
+
+
+13 What is the significance of tensors in PyTorch ?
+ans
+pytorch Tensor's are multi-dimentional uniform  immutable vector's .
+By converting our data to a tensor it can efficently to manupulating our  data and it is easyer to 
+apply machine learning algorithm on it to find complex pattern behind it.
+
+14 What is the difference between torch.Tensor and torch.cuda.Tensor in PyTorch ?
+ans
+if we create a tensor using torch.Tensor then it accupy memory in cpu of computer and no nvidea graphis card 
+is require for torch.Tensor but if we use the torch.cuda.Tensor then it occupy memory in GPU . It is faster
+rather than torch.cuda.Tensor .it works paralley to perform task's.
+
+15 What is the purpose of the torch.optim module in PyTorch ?
+ans
+torch.optim give following.
+    i Automate Parameter Updates
+    ii Provide Various Optimization Algorithms
+    iii Support for Advanced Techniques
+
+
+16 What are some common activation functions used in neural networks?
+ans
+    i relu
+    ii sigmoid
+    iii lekyrelu
+
+17 What is the difference between torch.nn.Module and torch.nn.Sequential in PyTorch ?
+ans
+torch.nn.Module is the base class for all neural network models in PyTorch, allowing for flexible
+ model definitions with custom forward methods.
+torch.nn.Sequential is a subclass of torch.nn.Module that stacks layers in a sequential order,
+ automatically defining the forward pass without custom logic.
+Use torch.nn.Module for complex architectures with shared layers,
+ multiple inputs/outputs, or conditional logic. Use torch.nn.Sequential for simple, linear stack models.
+
+
+18 How can you monitor training progress in TensorFlow 2.0 ?
+ans 
+using callback in TensorFlow at the model.fit(callback =  callback) we can moniter our training process.
+
+19 How does the Keras API fit into TensorFlow 2.0 ?
+ans 
+using
+from tensorflow import keras
+
+
+20 What is an example of a deep learning project that can be implemented using TensorFlow 2.0 ?
+ans 
+text to image 
+
+
+21 What is the main advantage of using pre-trained models in TensorFlow and PyTorch?
+ans
+the main advantage of these that we need not fine tune further if 
+we using pretrained model.
